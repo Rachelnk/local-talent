@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SUPPORT LOCAL TALENT</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+  <div class="header">
+    <div class="top-menu">
+      <h3>
+   <a href="Art.html">Art</a>
+     <a href="music.html">Music</a>
+      <a href="fashion.html">Fashion</a>
+      <a href="index.html">Home</a>
+  </h3>
+</div>
+<br>
+  <h1 id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">SUPPORT<BR>LOCAL TALENT</h1>
+      <script>
+          function mouseOver() {
+            document.getElementById("demo").style.color = "red";
+          }
+
+          function mouseOut() {
+            document.getElementById("demo").style.color = "black";
+          }
+          </script>
+          <!-- Javascrpit code-->
+
+  <h2>IN <br>FASHION.</h2>
+  </div>
+  <div class="services-section">
+  <div class="about-section">
+  <h3> Here are the featured stylists, <br>  fashion designers, <br> photographers....</h3>
+    </div>
+
+      <div class= "profile-row1">
+        <table>
+          <tr>
+            <td> <img src="assets/backgrounds/Tutu_photo.jpg"> </td>
+            <td> <h3>Tutu Photography</h3> <p> At Tutu Photography we provide world-class services for any kinds of shoots; <br>
+               weddings, birthdays, fashion, graduation etc. <br></p>
+        <p>     Have a look at our portfolio on: <br> </p>
+      <p>  <img src="assets/social_icons/behance.png" alt="">  <img src="assets/social_icons/facebook.png"> <img src="assets/social_icons/twitter.png" alt="twitter image"> </p>
+          </td>
+
+          </tr>
+                </table>
+        </div>
+        <div class= "profile-row2">
+          <table>
+            <tr>
+            <td>  <h3> Styled By Lulu Photography</<h3> <br>
+              <p> Our aim is to offer exclusive, elegant and iconic designs of quality clothing to our customers. <br>
+              If you want to be turn heads at an event or in the streets, try Styled By Lulu. <br> Our talented stylists and designers will <br>
+            transform your wardrobe. </p>
+          <p> Connect and checkout our portfolio here: <br> </p>
+          <p>  <img src="assets/social_icons/behance.png" alt="">  <img src="assets/social_icons/facebook.png"> <img src="assets/social_icons/twitter.png" alt="twitter image"> </p>
+              </td>
+
+              <td> <img src="assets/backgrounds/Lulu.jpg" alt=""> </td>
+
+            </tr>
+
+          </table>
+
+
+    </div>
+    </div>
+    <div class= "featured-artists">
+      <fieldset>
+        <legend> </legend>
+
+          <div class="slideshow-container">
+
+
+  <div class= "mySlides fade">
+
+          <p> "Photography is an austere and blazing poetry of the real.” <br>
+– Ansel Adam.</p>
+</div>
+  <div class= "mySlides fade">
+
+          <p> "Fashions fade, style is eternal."
+        <br>  —Yves Saint Laurent.</p>
+      </div>
+      <br>
+      <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+      </div>
+      </fieldset>
+      </div>
+      <script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 2 seconds
+  }
+  </script>
+  <div class="footer">
+    <div class="about-section">
+      <h3>CONTACT US ON: </h3>
+      <p> <img src="assets/social_icons/twitter.png"> <img src="assets/social_icons/facebook.png"> </p>
+      <p>COPYRIGHT 2021, Support Local Talent.</p>
+    </div>
+
+
+  </div>
+
+
+
+
+  </body>
+
+  </html>

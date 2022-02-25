@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SUPPORT LOCAL TALENT</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+  <div class="header">
+    <div class="top-menu">
+      <h3>
+         <a href="Art.html">Art</a>
+         <a href="music.html">Music</a>
+        <a href="fashion.html">Fashion</a>
+      <a href="index.html">Home</a>
+  </h3>
+</div>
+<br>
+  <h1 id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">SUPPORT<BR>LOCAL TALENT</h1>
+      <script>
+          function mouseOver() {
+            document.getElementById("demo").style.color = "red";
+          }
+
+          function mouseOut() {
+            document.getElementById("demo").style.color = "black";
+          }
+          </script>
+          <!-- Javascrpit code-->
+
+  <h2>IN <br> ART.</h2>
+  </div>
+<div class="services-section">
+    <div class="about-section">
+    <h3> Here are the featured digital artists, <br> potters, <br> painters....</h3>
+      </div>
+
+      <div class= "profile-row1">
+        <table>
+          <tr>
+            <td> <img src="assets/backgrounds/digital_art.jpg"> </td>
+            <td> <h3> DA Designs</h3> <p> We specialise in graphic & web design. <br> We offer services in website design and development, <br> mobile website, identity branding / logo design. <br>
+              <p> We strive to meet the ever-increasing fast paced technology demands <br> in sales and marketing to an ever-increasing intelligent tech savvy audience </p>
+        <p>     Have a look at our portfolio on: <br> </p>
+          <p>  <img src="assets/social_icons/behance.png" alt="">  <img src="assets/social_icons/facebook.png"> <img src="assets/social_icons/twitter.png" alt="twitter image"> </p>
+           </td>
+
+          </tr>
+                </table>
+        </div>
+        <div class= "profile-row2">
+          <table>
+            <tr>
+
+            <td> <h3> Hasan Pottery</<h3>
+           <p> We handcraft high quality, unique, and affordable pottery
+                <br> to help transform your space. <br>
+            <p>  Connect with us on: <br> </p>
+               <p> <img src="assets/social_icons/behance.png" alt="">  <img src="assets/social_icons/facebook.png"> <img src="assets/social_icons/twitter.png" alt="twitter image"> </p></td>
+              <td> <img src="assets/backgrounds/pots.jpg" alt=""> </td>
+
+            </tr>
+
+          </table>
+
+
+    </div>
+    <div class= "profile-row1">
+      <table>
+        <tr>
+            <td> <img src="assets/backgrounds/avantgarde.jpg" alt=""> </td>
+
+
+          <td> <h3> June And Jaja Art pieces</<h3> <p> We create art of original, emotive and edifying quality. </p>
+              <p>    Contact us for original and custom art pieces: <br> </p>
+
+           <p>  <img src="assets/social_icons/behance.png" alt="">  <img src="assets/social_icons/facebook.png"> <img src="assets/social_icons/twitter.png" alt="twitter image"> </p>
+
+
+        </tr>
+
+      </table>
+
+
+</div>
+</div>
+    <div class= "featured-artists">
+      <fieldset>
+        <legend> </legend>
+
+          <div class="slideshow-container">
+
+
+  <div class= "mySlides fade">
+
+          <p> “I found I could say things with <br> color and shapes that I couldn’t say any other way—things I had no words for.” <br>
+– Georgia O'Keeffe.</p>
+</div>
+  <div class= "mySlides fade">
+
+          <p> “The object of art is not to reproduce reality, <br> but to create a reality of the same intensity.”
+        <br>  — Alberto Giacometti.</p>
+      </div>
+      <br>
+      <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+      </div>
+      </fieldset>
+      </div>
+      <script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 2 seconds
+  }
+  </script>
+
+
+
+  <div class="footer">
+    <div class="about-section">
+      <h3>CONTACT US ON: </h3>
+      <p> <img src="assets/social_icons/twitter.png"> <img src="assets/social_icons/facebook.png"> </p>
+      <p>COPYRIGHT 2021, Support Local Talent.</p>
+    </div>
+
+
+  </div>
+  </body>
+
+  </html>

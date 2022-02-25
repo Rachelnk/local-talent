@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SUPPORT LOCAL TALENT</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <div class="header">
+      <div class="top-menu">
+        <h3>
+          <a href="Art.html">Art</a>
+          <a href="music.html">Music</a>
+          <a href="fashion.html">Fashion</a>
+        <a href="index.html">Home</a>
+    </h3>
+
+  </div>
+  <br>
+
+    <h1 id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">SUPPORT<BR>LOCAL TALENT</h1>
+        <script>
+            function mouseOver() {
+              document.getElementById("demo").style.color = "red";
+            }
+
+            function mouseOut() {
+              document.getElementById("demo").style.color = "black";
+            }
+            </script>
+            <!-- Javascrpit code-->
+
+    <h2>FOR YOU, BY LOCAL TALENT.</h2>
+
+
+    </div>
+
+    <div class="about-section">
+        <h3>About us</h3>
+        <p> Are looking for a fashion designer to design your dream wedding gown <br> or for an event organizer to help you plan your event <br> or customized art pieces, jewellery?
+          <p> Or you're an artist looking to for a platform to help you get more exposure and thus reaching out to more potential clients? </p>
+        <p>  Look no further!! </p>
+
+        <P> We provide a platform for <br> local artists from every field: music, film, fashion to show case their talent and skills. </P>
+        <p> Our goal is to make it easy and hassle free for artists to connect with future potential customers by showcasing their portfolio, <br>
+          and providing links to their portfolio and social media. </p>
+    </div>
+
+    <div class="services-section">
+
+        <div class="contact-us-section">
+          <h4> FOR ARTISTS</h4>
+          <p> Fill out the form below to be featured on our platform. <br> </p>
+          <p> Please note that the it might take up to 4 business days to have your details reviewed. <br>
+          After the review an email will be sent you with further instructions.</p>
+          <div class="form">
+            <div class="input-container ic1">
+                    <input id="firstname" class="input" type="text" placeholder=" " />
+                    <div class="cut"></div>
+                    <label for="firstname" class="placeholder">First name</label>
+                  </div>
+                  <div class="input-container ic2">
+                    <input id="lastname" class="input" type="text" placeholder=" " />
+                    <div class="cut"></div>
+                    <label for="lastname" class="placeholder">Last name</label>
+                  </div>
+                  <div class="input-container ic2">
+                    <input id="email" class="input" type="text" placeholder=" " />
+                    <div class="cut cut-short"></div>
+                    <label for="email" class="placeholder">Email</>
+                  </div>
+                  <div class="input-container ic2">
+                    <input id="instagram" class="input" type="text" placeholder=" " />
+                    <div class="cut cut-short"></div>
+                    <label for="Instagram" class="placeholder">Instagram</>
+                  </div>
+                  <div class="input-container ic2">
+                    <input id="Twitter" class="input" type="text" placeholder=" " />
+                    <div class="cut cut-short"></div>
+                    <label for="Twitter" class="placeholder">Twitter</>
+                  </div>
+                  <div class="input-container ic2">
+                    <input id="Facebook" class="input" type="text" placeholder=" " />
+                    <div class="cut cut-short"></div>
+                    <label for="Facebook" class="placeholder">Facebook</>
+                  </div>
+                  <div class="input-container ic2">
+                    <input id="LinkedIn" class="input" type="text" placeholder=" " />
+                    <div class="cut cut-short"></div>
+                    <label for="LinkedIn" class="placeholder">LinkedIn</>
+                  </div>
+                  <button type="text" class="submit">submit</button>
+        </div>
+    </div>
+
+    <div class= "featured-artists">
+      <fieldset>
+        <legend> TESTIMONIALS </legend>
+
+          <div class="slideshow-container">
+
+      <div class= "mySlides fade">
+
+        <h5> Ella Lulu of Styled by Lulu</h5>
+          <p> Ever since I signed up with Support Local Talent my clintele has been steadily growing. <br>
+            And so has my fashion house Styled By Lulu.
+        <br>  I have also been able to mentor and work with other talented fashion designers and photographers.</p>
+</div>
+  <div class= "mySlides fade">
+        <h5> Mike The Jeweller</h5>
+          <p> This platform has been a life line for my business. <br>
+            I went from a few orders a week to a dozen in a day.</p>
+</div>
+  <div class= "mySlides fade">
+        <h5> Moe Joe - Customer</h5>
+          <p> I have had the oppoturnity to work with creme de la creme of photographers thanks to this platform.
+            <br>
+        </p>
+      </div>
+      </div>
+      </fieldset>
+      </div>
+
+    <br>
+    <div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+    <script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+
+
+
+    <div class="footer">
+      <div class="about-section">
+        <h3>CONTACT US ON: </h3>
+        <p> <img src="assets/social_icons/twitter.png"> <img src="assets/social_icons/facebook.png"> </p>
+        <p>COPYRIGHT 2021, Support Local Talent.</p>
+      </div>
+
+
+    </div>
+    <script>
+        function myFunction() {
+          document.getElementById("frm1").submit();
+        }
+        </script>
+
+</body>
+</html>
